@@ -37,7 +37,11 @@ function loginWithOAuth(code: string): Observable<AxiosResponse<any>> {
 /* #endregion */
 
 /* #region pathofexile.com */
-function getStashTab(league: string, id: string, realm: string = 'poe2'): Observable<AxiosResponse<IStashTabResponse>> {
+function getStashTab(
+  league: string,
+  id: string,
+  realm: string = 'poe2'
+): Observable<AxiosResponse<IStashTabResponse>> {
   return axios.get<IStashTabResponse>(`${apiUrl}/stash/${realm}/${league}/${id}`);
 }
 
@@ -164,7 +168,10 @@ function getCharacters(realm: string = 'poe2'): Observable<AxiosResponse<ICharac
   return axios.get<ICharacterListResponse>(`${apiUrl}/character/${realm}`);
 }
 
-function getCharacter(character: string, realm: string = 'poe2'): Observable<AxiosResponse<ICharacterResponse>> {
+function getCharacter(
+  character: string,
+  realm: string = 'poe2'
+): Observable<AxiosResponse<ICharacterResponse>> {
   return axios.get<ICharacterResponse>(`${apiUrl}/character/${realm}/${character}`);
 }
 
