@@ -3,6 +3,7 @@ import BurstModeIcon from '@mui/icons-material/BurstMode';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import SettingsIcon from '@mui/icons-material/Settings';
+import PersonIcon from '@mui/icons-material/Person';
 import {
   Divider,
   Drawer,
@@ -57,6 +58,19 @@ const NavigationMenu = ({ open, toggleSidenav, handleRedirect }: NavigationMenuP
       </div>
       <Divider />
       <List>
+        <ListItem
+          button
+          key="character"
+          selected={location.pathname === '/character'}
+          onClick={() => handleRedirect('/character')}
+        >
+          <ListItemIcon>
+            <Tooltip title="角色 / Character" placement="right">
+              <PersonIcon />
+            </Tooltip>
+          </ListItemIcon>
+          <ListItemText primary="角色 / Character" />
+        </ListItem>
         <ListItem
           button
           key="net-worth"

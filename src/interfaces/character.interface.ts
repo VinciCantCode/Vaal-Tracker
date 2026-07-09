@@ -21,4 +21,10 @@ export interface ICharacter {
   equipment?: IItem[];
   inventory?: IItem[];
   jewels?: IItem[];
+  passives?: {
+    hashes: number[];
+    specialisations?: {
+      [key: string]: number[];
+    };
+  };
 }

@@ -153,7 +153,7 @@ export class AccountStore {
 
   @action
   loginWithOAuthSuccess(response: IOAuthResponse) {
-    this.rootStore.routeStore.redirect('/net-worth');
+    this.rootStore.routeStore.redirect('/character');
     this.rootStore.uiStateStore.setValidated(true);
     this.rootStore.notificationStore.createNotification('login_with_oauth', 'success');
     this.setToken(response);
@@ -383,7 +383,7 @@ export class AccountStore {
     } else {
       axios.defaults.headers.common['Authorization'] = `Bearer ${this.token.accessToken}`;
       this.rootStore.uiStateStore.setValidated(true);
-      this.rootStore.routeStore.redirect('/net-worth');
+      this.rootStore.routeStore.redirect('/character');
       fromStream(timer(1 * 1000).pipe(switchMap(() => of(this.initSession()))));
     }
   }

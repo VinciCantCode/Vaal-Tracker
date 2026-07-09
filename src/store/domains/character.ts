@@ -19,6 +19,12 @@ export class Character implements ICharacter {
   @persist('list') @observable inventory: IItem[] = [];
   @persist('list') @observable equipment: IItem[] = [];
   @persist('list') @observable jewels: IItem[] = [];
+  @persist('object') @observable passives?: {
+    hashes: number[];
+    specialisations?: {
+      [key: string]: number[];
+    };
+  };
 
   constructor(obj?: ICharacter) {
     makeObservable(this);

@@ -37,6 +37,7 @@ import BulkSell from './routes/bulk-sell/BulkSell';
 import Login from './routes/login/Login';
 import NetWorth from './routes/net-worth/NetWorth';
 import Settings from './routes/settings/Settings';
+import CharacterDashboard from './routes/character-dashboard/CharacterDashboard';
 import { electronService } from './services/electron.service';
 import { RootStore } from './store/rootStore';
 
@@ -108,12 +109,13 @@ const App = ({ error }: Props) => {
                     <Route path="/net-worth" component={NetWorth} />
                     <Route path="/settings" component={Settings} />
                     <Route path="/bulk-sell" component={BulkSell} />
+                    <Route path="/character" component={CharacterDashboard} />
                     <Route
                       exact
                       path="/"
                       render={() =>
                         rootStore.accountStore.getSelectedAccount.name ? (
-                          <Redirect to="/net-worth" />
+                          <Redirect to="/character" />
                         ) : (
                           <Redirect to="/login" />
                         )
