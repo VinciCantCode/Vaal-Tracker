@@ -217,7 +217,7 @@ export class AccountStore {
 
           return forkJoin(
             externalService.getLeagues('main', 1, res.realm),
-            externalService.getCharacters(),
+            externalService.getCharacters(res.realm),
             !skipAuth ? this.getSelectedAccount.authorize() : of({})
           ).pipe(
             concatMap((requests) => {
