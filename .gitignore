@@ -22,3 +22,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# custom agent configurations and local env
+.agents/
+.gemini/
+.env
+.env.*
+
