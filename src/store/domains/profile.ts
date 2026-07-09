@@ -494,7 +494,11 @@ export class Profile {
       (st) => this.activeStashTabIds.find((ast) => ast === st.id) !== undefined
     );
 
-    if (selectedStashTabs.length === 0) {
+    const hasCharacter =
+      this.activeCharacterName &&
+      this.activeCharacterName !== '' &&
+      this.activeCharacterName !== 'None';
+    if (selectedStashTabs.length === 0 && !hasCharacter) {
       return this.getItemsFail(
         new Error('no_stash_tabs_selected_for_profile'),
         this.activeLeagueId

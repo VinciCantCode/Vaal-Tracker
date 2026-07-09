@@ -212,12 +212,13 @@ export class AccountStore {
     fromStream(
       this.getPoeProfile().pipe(
         concatMap((res: IPoeProfile) => {
+          console.log('[Antigravity Debug] Poe Profile:', res);
           const account = this.addOrUpdateAccount(res.name);
           this.selectAccountByName(account.name!);
 
           return forkJoin(
-            externalService.getLeagues('main', 1, res.realm),
-            externalService.getCharacters(res.realm),
+            externalService.getLeagues('main', 1, 'poe2'),
+            externalService.getCharacters('poe2'),
             !skipAuth ? this.getSelectedAccount.authorize() : of({})
           ).pipe(
             concatMap((requests) => {
@@ -259,7 +260,8 @@ export class AccountStore {
                       'fetching_stash_tabs',
                       league.leagueId
                     );
-                    return league.getStashTabs();
+                    // For PoE 2, stash API is not supported/needed yet, so return an empty observable
+                    return of(undefined);
                   }),
                   switchMap(() => {
                     if (this.getSelectedAccount.profiles.length === 0) {

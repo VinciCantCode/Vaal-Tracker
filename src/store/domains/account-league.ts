@@ -89,8 +89,8 @@ export class AccountLeague {
         return of(undefined);
       }),
       catchError((e: AxiosError) => {
-        of(this.getStashTabsFail(e));
-        throw e;
+        this.getStashTabsFail(e);
+        return of(undefined);
       })
     );
   }
