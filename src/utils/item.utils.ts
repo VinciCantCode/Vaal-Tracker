@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { Rarity } from '../assets/themes/exilence-theme';
+import { Rarity } from '../assets/themes/vaal-theme';
 import { IItem } from '../interfaces/item.interface';
 import { IPricedItem } from '../interfaces/priced-item.interface';
 import { IProperty } from '../interfaces/property.interface';

@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useStores } from '../../..';
-import { rarityColors } from '../../../assets/themes/exilence-theme';
+import { rarityColors } from '../../../assets/themes/vaal-theme';
 import { IPricedItem } from '../../../interfaces/priced-item.interface';
 import useStyles from './ItemTableFilterSubtotal.styles';
 

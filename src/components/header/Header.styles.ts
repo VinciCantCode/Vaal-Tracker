@@ -1,7 +1,7 @@
 import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
 
-import { primaryLighter } from '../../assets/themes/exilence-theme';
+import { primaryLighter } from '../../assets/themes/vaal-theme';
 import { resizeHandleContainerHeight, toolbarHeight } from './Header';
 
 export const kofiLogoHeight = 21;

@@ -13,7 +13,7 @@ import {
   useTable,
 } from 'react-table';
 import { useStores } from '../..';
-import { primaryLighter, statusColors } from '../../assets/themes/exilence-theme';
+import { primaryLighter, statusColors } from '../../assets/themes/vaal-theme';
 import { useLocalStorage } from '../../hooks/use-local-storage';
 import { excludeLegacyMaps } from '../../utils/price.utils';
 import CustomPriceDialogContainer from '../custom-price-dialog/CustomPriceDialogContainer';

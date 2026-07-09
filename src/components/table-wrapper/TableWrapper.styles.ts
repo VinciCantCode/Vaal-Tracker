@@ -1,7 +1,7 @@
 import { Theme } from '@mui/material';
 import createStyles from '@mui/styles/createStyles';
 import makeStyles from '@mui/styles/makeStyles';
-import { primaryLighter } from '../../assets/themes/exilence-theme';
+import { primaryLighter } from '../../assets/themes/vaal-theme';
 import { hex2rgba } from '../../utils/misc.utils';
 
 const tableHeadCellBorder = '1px solid rgba(56, 56, 56, 0.6)';

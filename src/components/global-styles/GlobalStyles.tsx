@@ -1,7 +1,7 @@
 import { Theme } from '@mui/material/styles';
 import { makeStyles } from '@mui/styles';
 
-import { background } from '../../assets/themes/exilence-theme';
+import { background } from '../../assets/themes/vaal-theme';
 const useStyles = makeStyles((theme: Theme) => ({
   '@global': {
     'html, body': {

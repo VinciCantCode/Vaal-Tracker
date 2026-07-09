@@ -10,7 +10,6 @@ import MinimizeIcon from '@mui/icons-material/Minimize';
 import HelpIcon from '@mui/icons-material/HelpOutline';
 import clsx from 'clsx';
 import { observer } from 'mobx-react-lite';
-import kofiLogo from '../../assets/img/kofi_button_stroke.webp';
 import { close, maximize, minimize, openLink, unmaximize } from '../../utils/window.utils';
 import SupportPanel from '../support-panel/SupportPanel';
 import useStyles from './Header.styles';
@@ -54,7 +53,7 @@ const Header = ({
             <Grid container spacing={1} alignItems="center">
               <Grid item>
                 <Typography variant="h6" noWrap className={classes.title}>
-                  Exilence CE
+                  Vaal Vault
                 </Typography>
               </Grid>
               <Grid item>
@@ -82,18 +81,7 @@ const Header = ({
           </Grid>
           <Grid item>
             <Grid container alignItems="center">
-              <Grid item className={clsx(classes.noDrag)}>
-                <a href="https://ko-fi.com/ExilenceCE" onClick={(e) => openLink(e)}>
-                  <Box
-                    display="flex"
-                    alignItems="center"
-                    height={1}
-                    className={classes.kofiWrapper}
-                  >
-                    <img className={classes.kofiLogo} src={kofiLogo} alt="Ko-fi" />
-                  </Box>
-                </a>
-              </Grid>
+
               <Grid
                 item
                 className={clsx(

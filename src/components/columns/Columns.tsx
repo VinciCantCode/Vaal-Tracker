@@ -8,7 +8,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Column } from 'react-table';
 import { useStores } from '../..';
-import { itemColors, primaryLighter, rarityColors } from '../../assets/themes/exilence-theme';
+import { itemColors, primaryLighter, rarityColors } from '../../assets/themes/vaal-theme';
 import { ISparkLineDetails } from '../../interfaces/external-price.interface';
 import { IPricedItem } from '../../interfaces/priced-item.interface';
 import { ICompactTab } from '../../interfaces/stash.interface';

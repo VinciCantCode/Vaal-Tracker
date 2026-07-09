@@ -23,7 +23,7 @@ const createTray = ({ mainWindow, updateAvailable, isQuittingCallback }: CreateT
 
   const contextMenu = Menu.buildFromTemplate([
     {
-      label: 'Show Exilence CE',
+      label: 'Show Vaal Vault',
       click: () => mainWindow.show(),
     },
     {
@@ -34,13 +34,6 @@ const createTray = ({ mainWindow, updateAvailable, isQuittingCallback }: CreateT
       },
     },
     { type: 'separator' },
-    {
-      label: 'Donate',
-      type: 'normal',
-      click: async () => {
-        await shell.openExternal('https://ko-fi.com/ExilenceCE');
-      },
-    },
     {
       label: 'Discord / Help',
       type: 'normal',
@@ -60,7 +53,7 @@ const createTray = ({ mainWindow, updateAvailable, isQuittingCallback }: CreateT
     },
   ]);
 
-  tray.setToolTip('Exilence CE');
+  tray.setToolTip('Vaal Vault - 瓦尔宝库');
   tray.on('click', () => mainWindow.show());
   tray.setIgnoreDoubleClickEvents(true);
   tray.setContextMenu(contextMenu);

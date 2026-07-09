@@ -100,7 +100,7 @@ export type StatusColor = typeof statusColors;
 
 export const primaryGradient = `linear-gradient(90deg, ${primaryDark} 0%, ${primaryMain} 35%, ${primaryDarkest} 100%)`;
 
-export default function exilenceTheme() {
+export default function vaalTheme() {
   return createTheme({
     breakpoints: {
       values: {

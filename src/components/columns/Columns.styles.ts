@@ -4,7 +4,7 @@ import {
   currencyChangeColors,
   itemColors,
   primaryLighter,
-} from '../../assets/themes/exilence-theme';
+} from '../../assets/themes/vaal-theme';
 
 const useStyles = makeStyles((theme) => ({
   iconCellInner: {

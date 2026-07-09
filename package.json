@@ -1,6 +1,6 @@
 {
-  "name": "exilence-ce-app",
-  "version": "1.2.11",
+  "name": "vaal-vault-app",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",
@@ -115,8 +115,8 @@
   "build": {
     "extends": null,
     "generateUpdatesFilesForAllChannels": true,
-    "productName": "Exilence CE",
-    "appId": "com.exilence.exilence-ce-app",
+    "productName": "Vaal Vault",
+    "appId": "com.vaalvault.app",
     "files": [
       "build/**/*",
       "public/icon.*",
@@ -131,8 +131,8 @@
     },
     "publish": {
       "provider": "github",
-      "repo": "exilence-ce",
-      "owner": "exilence-ce"
+      "repo": "vaal-vault",
+      "owner": "VinciCantCode"
     },
     "win": {
       "icon": "build/icon.ico"
@@ -146,15 +146,15 @@
       "category": "public.app-category.utilities"
     },
     "linux": {
-      "artifactName": "Exilence-CE-${version}.${ext}",
+      "artifactName": "Vaal-Vault-${version}.${ext}",
       "icon": "build/icon512x512.png",
       "target": "AppImage",
       "category": "Utility"
     },
     "protocols": {
-      "name": "exilence",
+      "name": "vaalvault",
       "schemes": [
-        "exilence"
+        "vaalvault"
       ]
     }
   },

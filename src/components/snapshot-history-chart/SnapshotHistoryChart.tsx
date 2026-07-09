@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import HC from 'highcharts';
 
-import { primaryDarker } from '../../assets/themes/exilence-theme';
+import { primaryDarker } from '../../assets/themes/vaal-theme';
 import { IConnectionChartSeries } from '../../interfaces/connection-chart-series.interface';
 import { IGroupChartSeries } from '../../interfaces/group-chart-series.interface';
 import Highcharts from './../highcharts-base/HighchartsBase';

@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import { observer } from 'mobx-react-lite';
 import React, { ReactNode } from 'react';
 import { useLocation } from 'react-router';
-import { background } from '../../assets/themes/exilence-theme';
+import { background } from '../../assets/themes/vaal-theme';
 import { resizeHandleContainerHeight, toolbarHeight } from '../header/Header';
 import GroupOverviewContainer from './group-overview/GroupOverviewContainer';
 import {

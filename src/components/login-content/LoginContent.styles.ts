@@ -1,5 +1,5 @@
 import makeStyles from '@mui/styles/makeStyles';
-import { primaryLighter } from '../../assets/themes/exilence-theme';
+import { primaryLighter } from '../../assets/themes/vaal-theme';
 
 import { toolbarHeight } from '../header/Header';
 

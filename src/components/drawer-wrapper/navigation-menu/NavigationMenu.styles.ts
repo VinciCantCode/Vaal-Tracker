@@ -2,7 +2,7 @@ import makeStyles from '@mui/styles/makeStyles';
 
 import { resizeHandleContainerHeight, toolbarHeight } from '../../header/Header';
 import { innerToolbarHeight } from '../DrawerWrapper';
-import { primaryLighter } from '../../../assets/themes/exilence-theme';
+import { primaryLighter } from '../../../assets/themes/vaal-theme';
 
 export const navigationMenuWidth = 240;
 export const collapsedNavigationMenuWidth = 57;

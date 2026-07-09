@@ -1,6 +1,6 @@
 import makeStyles from '@mui/styles/makeStyles';
 
-import { statusColors } from '../../assets/themes/exilence-theme';
+import { statusColors } from '../../assets/themes/vaal-theme';
 
 const useStyles = makeStyles((theme) => ({
   error: {

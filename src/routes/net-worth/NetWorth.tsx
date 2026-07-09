@@ -9,7 +9,7 @@ import { observer } from 'mobx-react-lite';
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { appName, useStores, visitor } from '../..';
-import { primaryLighter, rarityColors } from '../../assets/themes/exilence-theme';
+import { primaryLighter, rarityColors } from '../../assets/themes/vaal-theme';
 import ChartToolboxContainer from '../../components/chart-toolbox/ChartToolboxContainer';
 import {
   Accordion,

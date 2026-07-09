@@ -91,7 +91,7 @@ function createWindow() {
   manage(browserWindows[MAIN_BROWSER_WINDOW]);
   browserWindows[
     MAIN_BROWSER_WINDOW
-  ].webContents.userAgent = `OAuth exilencece/1.2.11 (contact: exilencece@gmail.com) StrictMode`;
+  ].webContents.userAgent = `OAuth vaalvault/0.1.0 (contact: support@vaalvault.com) StrictMode`;
 
   isDev
     ? browserWindows[MAIN_BROWSER_WINDOW].loadURL(
@@ -216,9 +216,9 @@ function createWindow() {
 }
 
 if (isDev && process.platform !== SYSTEMS.MACOS) {
-  app.setAsDefaultProtocolClient('exilence', process.execPath, [path.resolve(process.argv[1])]);
+  app.setAsDefaultProtocolClient('vaalvault', process.execPath, [path.resolve(process.argv[1])]);
 } else {
-  app.setAsDefaultProtocolClient('exilence');
+  app.setAsDefaultProtocolClient('vaalvault');
 }
 
 /**

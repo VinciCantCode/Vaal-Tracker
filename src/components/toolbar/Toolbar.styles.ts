@@ -1,6 +1,6 @@
 import { Theme } from '@mui/material';
 import makeStyles from '@mui/styles/makeStyles';
-import { primaryGradient, statusColors } from '../../assets/themes/exilence-theme';
+import { primaryGradient, statusColors } from '../../assets/themes/vaal-theme';
 import { drawerWidth, innerToolbarHeight } from '../drawer-wrapper/DrawerWrapper';
 import {
   collapsedNavigationMenuWidth,

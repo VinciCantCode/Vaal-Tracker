@@ -31,7 +31,7 @@ import {
   useTable,
 } from 'react-table';
 import { useStores } from '../..';
-import { statusColors } from '../../assets/themes/exilence-theme';
+import { statusColors } from '../../assets/themes/vaal-theme';
 import { useLocalStorage } from '../../hooks/use-local-storage';
 import { exportData } from '../../utils/export.utils';
 import ColumnHidePage from '../column-hide-page/ColumnHidePage';

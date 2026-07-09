@@ -1,7 +1,7 @@
 import { useTheme } from '@mui/material';
 import Highcharts from 'highcharts';
 
-import { highchartsColors } from '../../assets/themes/exilence-theme';
+import { highchartsColors } from '../../assets/themes/vaal-theme';
 
 const HighchartsTheme = () => {
   const theme = useTheme();

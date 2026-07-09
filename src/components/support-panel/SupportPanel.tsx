@@ -88,28 +88,20 @@ const SupportPanel = ({ isOpen = false, setIsOpen, anchorEl = null }: SupportPan
                 )}
                 <div className={classes.separator} />
                 <a
-                  href="https://github.com/exilence-ce/exilence-ce/issues/new?template=feature_request.md"
+                  href="https://github.com/VinciCantCode/vaal-vault/issues/new?template=feature_request.md"
                   onClick={(e) => handleLinkClick(e)}
                   className={classes.optionLink}
                 >
                   <Typography variant="body2">{t('label.feature_request')}</Typography>
                 </a>
                 <a
-                  href="https://github.com/exilence-ce/exilence-ce/issues/new?template=bug_report.md"
+                  href="https://github.com/VinciCantCode/vaal-vault/issues/new?template=bug_report.md"
                   onClick={(e) => handleLinkClick(e)}
                   className={classes.optionLink}
                 >
                   <Typography variant="body2">{t('label.bug_report')}</Typography>
                 </a>
                 <div className={classes.separator} />
-                <a
-                  href="https://ko-fi.com/ExilenceCE"
-                  onClick={(e) => handleLinkClick(e)}
-                  className={classes.optionLink}
-                >
-                  <Typography variant="body2">{t('label.support_us')}</Typography>
-                  <FavoriteIcon className={classes.icon} />
-                </a>
                 <li className={classes.option} onClick={handleCreditsClick}>
                   <Typography variant="body2">{t('label.credits')}</Typography>
                   <CardGiftcardIcon className={classes.icon} />

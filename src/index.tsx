@@ -17,7 +17,7 @@ import { HashRouter as Router, Redirect, Route } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.min.css';
 import ua, { Visitor } from 'universal-analytics';
 import './assets/styles/reactour.scss';
-import exilenceTheme from './assets/themes/exilence-theme';
+import vaalTheme from './assets/themes/vaal-theme';
 import AnnouncementDialogContainer from './components/announcement-dialog/AnnouncementDialogContainer';
 import DrawerWrapperContainer from './components/drawer-wrapper/DrawerWrapperContainer';
 import ErrorBoundaryFallback from './components/error-boundary-fallback/ErrorBoundaryFallback';
@@ -45,7 +45,7 @@ declare module '@mui/styles/defaultTheme' {
   interface DefaultTheme extends Theme {}
 }
 
-export const appName = 'Exilence CE';
+export const appName = 'Vaal Vault';
 export let visitor: Visitor | undefined = undefined;
 initSentry();
 configureI18n();
@@ -61,7 +61,7 @@ configure({ enforceActions: 'observed' });
 
 moment.locale(electronService.appLocale);
 
-const theme = responsiveFontSizes(exilenceTheme());
+const theme = responsiveFontSizes(vaalTheme());
 
 export const rootStore = new RootStore();
 
@@ -72,7 +72,7 @@ export function useStores() {
 }
 
 localForage.config({
-  name: 'exilence-next-db',
+  name: 'vaal-vault-db',
   driver: localForage.INDEXEDDB,
 });
 

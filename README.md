@@ -1,26 +1,22 @@
-Exilence CE
-[![Become a Ko-fi](https://shields.io/badge/ko--fi-Buy_me_a_coffee-ff5f5f?logo=ko-fi&style=for-the-badgeKo-fi)](https://ko-fi.com/ExilenceCE)
-===
-Exilence CE (previously Exilence Next) is a desktop application that helps you calculate how valuable your character, inventory and stash tabs are. The data is broken down and summarized over time, to see how much you earn on an hourly basis. To add to this, you can also group up with friends directly within the app to see your combined net worth.
+# Vaal Vault - 瓦尔宝库
 
-The app is a successor to our old application named Exilence, previously known as ExileParty.
+Vaal Vault (瓦尔宝库) is a desktop application that helps you calculate how valuable your character, inventory and stash tabs are. The data is broken down and summarized over time, to see how much you earn on an hourly basis. To add to this, you can also group up with friends directly within the app to see your combined net worth.
 
-![Preview image](https://i.imgur.com/IfyINev.png)
+The app is based on the open-source Exilence CE project and refactored to support Path of Exile 2.
 
 ## Contents
 
 - [Download](#download)
-- [Changelog](https://github.com/exilence-ce/exilence-ce/blob/master/CHANGELOG.md)
+- [Changelog](https://github.com/VinciCantCode/vaal-vault/blob/main/CHANGELOG.md)
 - [Platform](#platform)
 - [Contributing with development](#contributing-with-development)
 - [Contact us](#contact-us)
-- [Supporting us](#supporting-us)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ## Download
 
-Download the latest release at https://github.com/exilence-ce/exilence-ce/releases/latest
+Download the latest release at https://github.com/VinciCantCode/vaal-vault/releases/latest
 
 ## Platform
 
@@ -29,29 +25,28 @@ Currently runs with:
 - Electron 15.1.0
 - React 17.0.1
 - mobx 6.0.1
-- .NET Core 3.1
 - **node 16.x**
 - **npm 7.x**
 
 ## Contributing with development
 
-Before submitting a PR, please see our [contributing guidelines](https://github.com/exilence-ce/exilence-ce/blob/master/CONTRIBUTING.md).
+Before submitting a PR, please see our [contributing guidelines](https://github.com/VinciCantCode/vaal-vault/blob/main/CONTRIBUTING.md).
 
 ---
 **Prerequisite for building LINUX**
 
 You will need to manually set protocol handling. Follow steps below:
 
-1. Create `~/.local/share/applications/ExilenceCE.desktop` with:
+1. Create `~/.local/share/applications/VaalVault.desktop` with:
 
 ```bash
 [Desktop Entry]
-Name=Exilence CE
-Exec=<ABSOLUTE PATH TO ExilenceCE>/ExilenceCEApp/dist/<Exilence-CE-X.Y.Z.AppImage> %u
-Icon=<ABSOLUTE PATH TO ExilenceCE>/ExilenceCEApp/public/icon.ico
+Name=Vaal Vault
+Exec=<ABSOLUTE PATH TO VaalVault>/VaalVaultApp/dist/<Vaal-Vault-X.Y.Z.AppImage> %u
+Icon=<ABSOLUTE PATH TO VaalVault>/VaalVaultApp/public/icon.ico
 Terminal=false
 Type=Application
-MimeType=x-scheme-handler/exilence;
+MimeType=x-scheme-handler/vaalvault;
 ```
 
 2. Run:
@@ -82,11 +77,7 @@ npm run release (optional, to build the installer for production and release)
 
 Communicate with us at our Discord https://discord.gg/2T3WXBgjaM
 
-Report bugs at https://github.com/exilence-ce/exilence-ce/issues
-
-## Supporting us
-
-If you feel like chiming in with something, here's our Ko-fi: https://ko-fi.com/ExilenceCE
+Report bugs at https://github.com/VinciCantCode/vaal-vault/issues
 
 ## Acknowledgements
 
